@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home Page </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"> 
+        <link rel = "stylesheet" href = "jw.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+                <h2>Woodmart</h2>
+            <div id = "hrightside">
+               <a href="tel:+916283535033"> <i class="fa-solid fa-phone"></i></a>
+               <button id = "mybtn">
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+               </button>                
+            </div>
+        </header>
+        <nav id="mynav">
+                    <a href = "index.html">HOME</a>
+                    <a href = "index.html">SHOP</a>
+                    <a href = "index.html">BLOGS</a>
+                    <a href = "index.html">PAGES</a>
+                    <a href = "index.html">ELEMENTS</a>
+                    <a href = "index.html">BUY</a>
+                    <a href="#" onclick="toggleDarkMode(); return false;">DARK MODE</a>
+               </nav>
+
+        <!-- <button id = "searchbar"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+        <div class = "search-container">
+            <input type="text" id="searchInput" placeholder = "Search jewellery">
+            <button id="searchBtn" onclick="navigateToPage()"> Search</button>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider">
+                 <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('ear-ring.png');">
+                    <div class="content">
+                        <h2>This is the Description </h2>
+                        <button>Explore More</button>
+                    </div>
+                 </div>
+    
+                <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('bangle.png');">
+                    <div class="content">
+                         <h2>This is the description </h2>
+                         <button>Discover</button>
+                    </div>
+                </div>
+    
+                <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('earring.jfif');">
+                     <div class="content">
+                        <h2>This is the Description</h2>
+                        <button>Explore more</button>
+                    </div>
+                </div>
+    
+                <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('bracelets.jfif');">
+                    <div class="content">
+                        <h2>This is the description</h2>
+                        <button>Discover</button>
+                    </div>
+                </div>
+            </div>
+        
+            <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <div id = "base1">
+            <div id = "base1div">
+                <h2> Find Your Perfect Match </h2>
+                <p> Shop by categories </p>
+            </div>
+
+            <div id="categoriesdiv">
+                <div class = "categories">
+                    <a href = "bangles.html"><img src = "bangle.png" class="categoriesimg"></a>
+                    <p> BANGLES </p>
+                </div>
+
+                <div class = "categories">
+                    <a href = "earrings.html"><img src = "earring.jfif" class="categoriesimg"></a>
+                    <p> EARRINGS </p>
+                </div>
+
+                <div class = "categories">
+                    <a href = "fingerrings.html"><img src = "fingerring.jfif" class="categoriesimg"></a>
+                    <p> FINGER RINGS </p>
+                </div>
+
+                <div class = "categories">
+                    <a href = "pendants.html"><img src = "pendants.jfif" class="categoriesimg"></a>
+                    <p> PENDANTS </p>
+                </div>
+
+                <div class = "categories">
+                    <a href = "mangalsutra.html"><img src = "mangalsutra.jfif" class="categoriesimg"></a>
+                    <p> MANGALSUTRA </p>
+                </div>
+
+                <div class = "categories">
+                    <a href = "bracelets.html"><img src = "bracelets.jfif" class="categoriesimg"></a>
+                    <p> BRACELETS </p>
+                </div>
+
+                <div class = "categories">
+                    <a href = "chains.html"><img src = "chains.jfif"  class="categoriesimg"></a>
+                    <p> CHAINS</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id = "base2">
+            <div id="base2div">
+                <h2> Curated For You </h2>
+                <p>Shop By Gender </p>
+            </div>
+
+            <div id = "base2categoriesdiv">
+                <div class = "base2categories">
+                    <a href = ""><img src = "Jewellery pics/women's jewellry.jfif" class="categoriesimg"></a>
+                    <p> Women </p>
+                </div>
+
+                <div class = "base2categories">
+                    <img src = "Jewellery pics/men's Jewellery.jfif" class="categoriesimg">
+                    <p> Men </p>
+                </div>
+
+                <div class = "base2categories">
+                    <img src = "Jewellery pics/kid's jewellery.jfif" class="categoriesimg">
+                    <p> Kids </p>
+                </div>
+            </div>
+        </div>
+        <div class="dots-container">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <footer class="luxury-footer">
+            <!-- Brand Name with premium spacing -->
+            <h2 class="footer-logo">WOODMART</h2>
+    
+            <!-- Tagline -->
+            <p class="footer-tagline">Crafting elegance, one piece at a time</p>
+    
+            <!-- Navigation Links -->
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <!-- Divider Line -->
+            <hr class="footer-divider">
+    
+            <!-- Copyright -->
+            <p class="footer-copyright">&copy; 2026 WOODMART. All rights reserved.</p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src = "jw.js"> </script>
+    </body>
+</html>

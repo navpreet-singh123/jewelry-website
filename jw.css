@@ -1,0 +1,423 @@
+*{
+  margin: 3px;
+}
+
+header{
+    width:100%;
+    height:60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index:10;
+}
+
+header h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 27px;
+}
+
+#hrightside{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    align-items:center;
+}
+#hrightside a i {
+    font-size: 20px;
+    color: #15d318;
+}
+
+body {
+  background-color: white;
+  color: black;
+  transition: background 0.3s, color 0.3s; /* Makes the switch smooth */
+}
+
+/* The styles that apply when dark mode is turned on */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+
+#mybtn{
+     width:50px;
+     height: 45px;
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border: none;
+    }
+
+.bar{
+     display: block;
+     width: 25px;
+     height: 7px;
+     background-color: black;
+     margin: 5px 0px;
+     }
+
+#mynav{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 15px 0;
+    position: absolute;        /* Takes the navbar out of the normal layout flow */
+    left: 0;                   /* Aligns it perfectly to the left edge */
+    z-index: 999;
+}
+
+#mynav a{
+    display:block;
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#searchbar{
+    display: flex;
+    justify-content: left;
+    width:97%;
+    margin-top: -140px;
+}
+
+.search-container{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.search-container input{
+    width:100%;
+    padding:12px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    outline:none;
+}
+
+.search-container input:focus{
+    border-color: #d4af37;
+}
+
+.search-container button{
+    padding:12px 20px;
+    font-size: 16px;
+    background-color: #d4af37;
+    color: white;
+    border: 2px solid #d4af37;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-container button:hover{
+    background-color: #aa8c2c;
+    border-color: #aa8caa;
+}
+
+/* Container Setup for Mobile */
+.slider-container {
+    position: relative;
+    width: 95%;
+    height: 300px;     /* Slightly shorter height works better on phone layouts */
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-right: 10px;
+    overflow: hidden;  /* Crucial: Hides the other slides */
+}
+
+/* The wrapper holding all slides */
+.slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Forces all slides to stay on ONE single horizontal line */
+    width: 400%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    gap:10px;
+}
+
+/* Individual Slide */
+.slide {
+    width: 25%;
+    flex-shrink: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;    /* Prevents the slides from squeezing/shrinking down */
+    border-right: 2px solid rgba(255, 255, 255, 0.2); /* Soft, semi-transparent white line */
+    box-sizing: border-box; /* Crucial so the border */
+}
+
+/* Content Text & Inner Buttons Box */
+.content {
+    text-align: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    padding: 15px;
+    width: 80%;        /* Keeps text away from the absolute edges */
+    box-sizing: border-box;
+}
+
+/* Shrunk down heading for small screens */
+.content h2 {
+    font-size: 1.5rem; /* Shrunk from 2.5rem so it doesn't break into huge messy lines */
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Makes text pop over images */
+}
+
+/* Tiny, neat buttons for the slider content */
+.content button {
+    background-color: #ffffff;
+    color: #333333;
+    border: none;
+    padding: 8px 20px; /* Smaller padding for mobile screens */
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* Sleeker Navigation Arrow Buttons for Mobile */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border: none;
+    width: 35px;  /* Smaller touch target to fit mobile screen widths */
+    height: 35px;
+    border-radius: 50%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;   /* Tucked close to the left edge */
+}
+
+.next {
+    right: 10px;  /* Tucked close to the right edge */
+}
+
+#base1div,#base2div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#base1div h2,p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#base2categoriesdiv{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width:100vw;
+    height:auto;
+    gap: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+.base2categoriesdiv::-webkit-scrollbar{
+    display: none;
+}
+
+.base2categories{
+    flex: 0 0 100vw;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.base2categories p{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoriesimg{
+    margin-left: 5px;
+    height: 400px;
+    width:340px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Container to align the dots neatly in the center */
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;           /* Gap between each dot */
+    margin-top: 5px;   /* Pushes dots down away from the image */
+    margin-bottom: 15px; /* Spacing before the text title starts */
+    width: 100%;
+}
+
+/* Base styling for all dots (inactive state) */
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #cccccc; /* Light grey color */
+    border-radius: 50%;        /* Makes it a perfect circle */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Styling applied ONLY to the active dot */
+.dot.active {
+    background-color: #333333; /* Darker charcoal grey */
+    transform: scale(1.2);     /* Makes it slightly bigger like Apple's slider */
+}
+
+.luxury-footer {
+    background-color: transparent; /* Seamless blend with your cream background */
+    padding: 40px 20px 30px 20px; /* Lots of breathing room top and bottom */
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #1a1a1a;
+}
+
+.footer-logo {
+    font-size: 20px;
+    letter-spacing: 4px; /* Widely spaced letters look incredibly luxurious */
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.footer-tagline {
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.2s ease;
+    font-size: 18px;
+}
+
+.footer-links a:hover {
+    color: #b59410; /* Subtle gold accent color on hover/tap */
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #e5e0d8; /* Very faint elegant line */
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+.footer-copyright {
+    font-size: 16px;
+    color: #888;
+    letter-spacing: 0.5px;
+}
+
+#banglesheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bbase1{
+    display: grid;
+    grid-template-columns: auto auto ;
+    margin-top: 30px;
+}
+
+.bbase1div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bbase1divimg{
+    height: 150px;
+    width:150px;
+}
+
+
+
+@media screen and (min-width:720px) {
+    #mybtn {
+        display: none;
+    }
+    #mynav {
+        flex-direction: row;
+        background-color: White;
+        color: #444;
+        padding: 18px;
+        position: fixed;
+        top: 0;
+        left: 40%;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    #mynav a {
+        color: #444;
+    }
+
+    header, #mynav {
+        border: 1px solid #000;
+    }
+}
+
+
+
+
+
+

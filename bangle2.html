@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home Page </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"> 
+        <link rel = "stylesheet" href = "jw2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+                <h2>Woodmart</h2>
+            <div id = "hrightside">
+               <a href="tel:+916283535033"> <i class="fa-solid fa-phone"></i></a>
+               <button id = "mybtn">
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+               </button>                
+            </div>
+        </header>
+
+        <nav id="mynav">
+            <a href = "index.html">HOME</a>
+            <a href = "index.html">SHOP</a>
+            <a href = "index.html">BLOGS</a>
+            <a href = "index.html">PAGES</a>
+            <a href = "index.html">ELEMENTS</a>
+            <a href = "index.html">BUY</a>
+        </nav>
+
+        <div class = "search-container">
+            <input type="text" id="searchInput" placeholder = "Search jewellery">
+            <button id="searchBtn" onclick="navigateToPage()"> Search</button>
+        </div>
+
+        <div id = "base2categoriesdiv">
+            <div class = "base2categories">
+                <a href = ""><img src = "bangles pics/bangle 2.jfif" class="categoriesimg"></a>
+            </div>
+
+            <div class = "base2categories">
+                <img src = "bangles pics/bangle 2.jfif" class="categoriesimg">
+            </div>
+
+            <div class = "base2categories">
+                <img src = "bangles pics/bangle 2.jfif" class="categoriesimg">
+            </div>
+        </div> 
+        <div class="dots-container">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <p> Breathtaking 22 Karat Yellow Gold Floral Motif Finger Ring</p>
+        <p id="price">₹15,400</p>
+        <!-- Replace 919876543210 with your shop's actual WhatsApp number -->
+        <!-- The %20 is a space, and %0A creates a new line in the text message -->
+        <a href="https://wa.me/919876543210?text=Hi%20Woodmart%2C%20I%20am%20interested%20in%20the%2022%20Karat%20Yellow%20Gold%20Floral%20Motif%20Finger%20Ring%20(Price:%20Rs.%2061,253).%20Is%20it%20available%20in%20store%3F" 
+        class="whatsapp-btn" 
+        target="_blank">
+        <!-- Inline SVG for the WhatsApp Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.563 7.93-7.934A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.69-2.997c-.202-.101-1.2-.591-1.382-.657-.182-.066-.315-.1-.448.1-.133.2-.516.657-.633.79-.117.133-.234.148-.436.047a5.1 5.1 0 0 1-1.616-1.003 5.3 5.3 0 0 1-1.118-1.397c-.118-.202-.013-.311.088-.413.09-.092.202-.234.303-.351.101-.117.135-.198.202-.331.066-.134.034-.251-.017-.352-.05-.101-.448-1.08-.613-1.478-.16-.387-.323-.335-.448-.341a4.2 4.2 0 0 0-.313-.006c-.108 0-.284.04-.432.2-.149.16-.567.553-.567 1.348s.577 1.564.658 1.674c.081.11 1.137 1.737 2.755 2.436.385.166.685.265.918.339.387.123.739.105 1.018.063.31-.047 1.2-.49 1.371-.963.171-.473.171-.879.12-.963-.051-.085-.18-.133-.38-.234"/>
+        </svg>
+        Inquire on WhatsApp
+        </a>
+        <p id="productDetails"> Product Specifications</p>
+        <table>-
+            <tr>
+                <th>Metal Purity</th>
+                <th>Approx. Weight</th>
+                <th>Metarial Color</th>
+            </tr>
+
+            <tr>
+                <td>22 KT(916)</td>
+                <td>5.40 grams</td>
+                <td>Yellow Gold</td>
+            </tr>
+        </table>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src = "jw.js"> </script>
+    </body>
+</html>

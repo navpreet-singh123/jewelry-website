@@ -1,0 +1,492 @@
+<header>
+            <div id = "header">
+                <div id ="mynav">   
+                    <button id = "mybtn">
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+                    </button> 
+                    <nav id = "navbar">
+                        <a href = "index.html">HOME</a>
+                        <a href = "index.html">SHOP</a>
+                        <a href = "index.html">BLOGS</a>
+                        <a href = "index.html">PAGES</a>
+                        <a href = "index.html">ELEMENTS</a>
+                        <a href = "index.html">BUY</a>
+                    </nav>
+                </div>
+
+                <div id = "webname">
+                    <h3>Woodmart</h3>
+                </div>
+
+                <div id ="lrButtons">
+                    <button>Login/</button>
+                    <button>Register</button>
+                    <a href="tel:+916283535033"> Call</a>
+                </div>
+                <div id = "hicons">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button><i class="fa-regular fa-heart"></i></button>
+                    <button><i class="fa-solid fa-cart-arrow-down"></i></button>
+                </div>
+            </div>    
+            <div id = "base1">
+            <div id = "base1heading">
+                <h3> Fine Jewelry</h3>
+                <h1>IT'S A GIFT FOR SOMEONE SPECIAL</h1>
+                <h4> Looked up one of the more obsecure latin words from a lorem ipsum passage and going through the cities of the world.</h4>
+            </div>
+
+            <div id ="base1buttons">
+                <button>SHOP NOW </button>
+                <button>VIEW MORE</button>
+            </div>
+        </div> 
+        </header>
+
+        <div class="slider-container">
+            <div class="slider">
+                 <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('ear\ ring.png');">
+                    <div class="content">
+                        <h2>This is the Description </h2>
+                        <button>Explore More</button>
+                    </div>
+                 </div>
+    
+                <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('bangle.png');">
+                    <div class="content">
+                         <h2>This is the description </h2>
+                         <button>Discover</button>
+                    </div>
+                </div>
+    
+                <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('ear\ ring.png');">
+                     <div class="content">
+                        <h2>This is the Description</h2>
+                        <button>Explore more</button>
+                    </div>
+                </div>
+    
+                <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('bangle.png');">
+                    <div class="content">
+                        <h2>This is the description</h2>
+                        <button>Discover</button>
+                    </div>
+                </div>
+             </div>
+
+            <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        
+        <div id = "Base2">
+            <div id = "Base2Heading">
+                <h1>FIND YOUR PERFECT MATCH</h1>
+                <h3> SHOP BY CATEGORIES </h3>
+            </div>
+
+            <div id = "Categories">
+                <div class = "CategoriesDiv">
+                    <a href="login.html"><img src = "bangle.png" class ="Cimage"> </a>
+                    <p>EARINGS</p>
+                </div>
+
+                <div class = "CategoriesDiv">
+                    <img src = "bangle.png" class="Cimage">
+                    <p>FINGER RINGS</p>
+                </div>
+
+                <div class = "CategoriesDiv">
+                    <a href = "login.html"><img src = "bangle.png" class="Cimage"> </a>
+                    <p>BANGLES</p>
+                </div>
+
+                <div class = "CategoriesDiv">
+                    <img src = "bangle.png" class="Cimage">
+                    <p>PENDANTS</p>
+                </div>
+
+                <div class = "CategoriesDiv">
+                    <img src = "bangle.png" class="Cimage">
+                    <p>MANGLASUTRA</p>
+                </div>
+
+                <div class = "CategoriesDiv">
+                    <img src = "bangle.png" class="Cimage">
+                    <p>Earings</p>
+                </div>
+
+                <div class = "CategoriesDiv">
+                    <img src = "bangle.png" class="Cimage">
+                    <p>Earings</p>
+                </div>
+
+                <div class = "CategoriesDiv">
+                    <img src = "bangle.png" class="Cimage">
+                    <p>Earings</p>
+                </div>
+
+                <div class = "CategoriesDiv">
+                    <img src = "bangle.png" class="Cimage">
+                    <p>Earings</p>
+                </div>
+
+                <div class = "CategoriesDiv">
+                    <img src = "bangle.png" class="Cimage">
+                    <p>Earings</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        *{
+    margin: 0;
+}
+#header
+{
+    margin-top: 0px;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#webname
+{
+    width: 15%;
+    margin-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f2e8e8;
+    font-size: 20px;
+}
+
+#mynav
+{
+    width: 10%;
+    background-color:rgb(83, 10, 10);
+}
+
+ #mybtn
+          {
+            width:100%;
+            height: 50px;
+            background-color: rgb(83, 10, 10);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .bar
+          {
+            display: block;
+            width: 45px;
+            height: 7px;
+            background-color: black;
+            margin: 5px 0px;
+          }
+
+
+#mynav a
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color:white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+#mynav a:hover
+{
+    color:#D4AF37;
+}
+
+#lrButtons
+{
+   margin-left: 150px;
+   width:15%;
+}
+
+#lrButtons button
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+    border: none;
+    background: transparent;
+}
+
+#hicons button
+{
+   border: none;
+   background: transparent;
+   color: white;
+}
+
+header
+{
+  height:80vh;
+  margin-top: 0;
+  background-image: url("main\ banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+#base1
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#base1heading
+{
+    margin-top: 250px;
+    margin-left: 700px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#base1heading h3
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+#base1heading h1
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+#base1heading h4
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-top: 7px;
+    font-size: 21px;
+}
+
+#base1buttons
+{
+    margin-left:700px;
+    margin-top: 20px;
+}
+
+#base1buttons button
+{
+    width: 120px;
+    height:45px;
+    border:2px solid #222222;
+    background: transparent;
+    color: white;
+}
+
+#slides
+{
+    margin : 30px;
+}
+
+.slide
+{   
+    height:400px;
+    background-image: url("ear\ ring.png");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+
+#Base2{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+}
+
+#Base2Heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Base2Heading h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Base2Heading h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Categories{
+    margin:30px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    width:100%;
+    max-width: 1450px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.CategoriesDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.Cimage{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+#abc a{
+    background-image: url(ear\ ring.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container restricts the view to only one slide at a time */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+/* The long track holding all 4 slides side-by-side */
+.slider {
+    margin-top: 50px;
+  display: flex;
+  width: 400%; /* 4 slides = 400% width */
+  height: 100%;
+  transition: transform 0.5s ease-in-out; /* Smooth slide animation */
+}
+
+/* Individual Slide styling */
+.slide {
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.content h2 {
+  margin-left:800px;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.content button {
+    margin-left: 800px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background: #ff4757;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.content button:hover {
+  background: #e84118;
+}
+
+/* Arrow Navigation Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+.nav-btn:hover { background: rgba(0, 0, 0, 0.8); }
+
+#Base3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#Base3Heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Base3Categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+
+
+.Base3CategoriesDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Base3image{
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+@media screen and (min-width : 420px) {
+
+    
+}
+
+
+
+// 2. The memory check (runs automatically as soon as ANY page loads)
+(function checkPreference() {
+  const savedPreference = localStorage.getItem('darkModeEnabled');
+  
+  // If they previously turned it on, apply it immediately
+  if (savedPreference === 'true') {
+    document.body.classList.add('dark-mode');
+  }
+})();

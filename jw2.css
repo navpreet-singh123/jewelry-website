@@ -1,0 +1,253 @@
+*{
+  margin: 3px;
+}
+
+header{
+    width:100%;
+    height:60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index:10;
+}
+
+header h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 27px;
+}
+
+#hrightside{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    align-items:center;
+}
+#hrightside a i {
+    font-size: 20px;
+    color: #15d318;
+}
+
+body {
+  background-color: white;
+  color: black;
+  transition: background 0.3s, color 0.3s; /* Makes the switch smooth */
+}
+
+/* The styles that apply when dark mode is turned on */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+#mybtn{
+     width:50px;
+     height: 45px;
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border: none;
+    }
+
+.bar{
+     display: block;
+     width: 25px;
+     height: 7px;
+     background-color: black;
+     margin: 5px 0px;
+     }
+
+#mynav{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 15px 0;
+    position: absolute;        /* Takes the navbar out of the normal layout flow */
+    left: 0;                   /* Aligns it perfectly to the left edge */
+    z-index: 999;
+}
+
+#mynav a{
+    display:block;
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#searchbar{
+    display: flex;
+    justify-content: left;
+    width:97%;
+    margin-top: -140px;
+}
+
+.search-container{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.search-container input{
+    width:100%;
+    padding:12px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    outline:none;
+}
+
+.search-container input:focus{
+    border-color: #d4af37;
+}
+
+.search-container button{
+    padding:12px 20px;
+    font-size: 16px;
+    background-color: #d4af37;
+    color: white;
+    border: 2px solid #d4af37;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-container button:hover{
+    background-color: #aa8c2c;
+    border-color: #aa8caa;
+}
+
+#base2categoriesdiv{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width:100vw;
+    height:auto;
+    gap: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+.base2categoriesdiv::-webkit-scrollbar{
+    display: none;
+}
+
+.base2categories{
+    flex: 0 0 100vw;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoriesimg{
+    margin-left: -12px;
+    height: 400px;
+    width:380px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Container to align the dots neatly in the center */
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;           /* Gap between each dot */
+    margin-top: 15px;   /* Pushes dots down away from the image */
+    margin-bottom: 5px; /* Spacing before the text title starts */
+    width: 100%;
+}
+
+/* Base styling for all dots (inactive state) */
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #cccccc; /* Light grey color */
+    border-radius: 50%;        /* Makes it a perfect circle */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Styling applied ONLY to the active dot */
+.dot.active {
+    background-color: #333333; /* Darker charcoal grey */
+    transform: scale(1.2);     /* Makes it slightly bigger like Apple's slider */
+}
+
+p{
+    font-size: 24px;
+    font-weight: 460;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9px;
+    color: #d4af37;
+}
+
+#productDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9px;
+    font-size: 24px;
+}
+
+td,th{
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table{
+    width:400px;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+    background-color: #25D366; /* WhatsApp Green */
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 88%; /* Fits nicely on your mobile screen width */
+    margin: 20px auto; /* Centers it inside the parent container */
+}
+
+/* Subtle feedback when tapped or hovered */
+.whatsapp-btn:active {
+    transform: scale(0.98);
+    background-color: #25D366;
+}
